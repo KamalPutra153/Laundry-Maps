@@ -1,0 +1,32 @@
+[
+  {
+    "id": "laundry1",
+    "name": "Laundryklin Ciputat",
+    "coordinates": [-6.316544562496209, 106.7551530227471],
+    "description": "Laundryklin Ciputat"
+  },
+  {
+    "id": "laundry2",
+    "name": "KILAU Laundry & Dry Clean Services",
+    "coordinates": [-6.321433152978019, 106.76292803850285],
+    "description": "KILAU Laundry & Dry Clean Services"
+  },
+  {
+    "id": "laundry3",
+    "name": "Join Laundry Express Legoso",
+    "coordinates": [-6.31354401574411, 106.75430958881469],
+    "description": "Join Laundry Express Legoso"
+  },
+  {
+    "id": "laundry4",
+    "name": "Okaasan Laundry Ciputat",
+    "coordinates": [-6.303655850347631, 106.75384344812234],
+    "description": "Okaasan Laundry Ciputat"
+  },
+  {
+    "id": "laundry5",
+    "name": "Wizwash Laundry Ciputat",
+    "coordinates": [-6.2917338, 106.7444706],
+    "description": "Ini adalah Ciputat."
+  }
+]
