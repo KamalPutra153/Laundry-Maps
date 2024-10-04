@@ -1,9 +1,8 @@
 // components/maps.js
-
 import { useEffect } from "react";
-import { useRouter } from "next/router"; // Import useRouter
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic"; // Import dynamic dari Next.js
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import data from "@/pages/data/listlaundry.json"; // Ganti path jika diperlukan
@@ -21,11 +20,12 @@ const CustomMarker = () => {
   return markerIcon;
 };
 
-export default function Maps() {
+// Komponen peta yang akan di-load secara dinamis
+const MapComponent = () => {
   const router = useRouter(); // Inisialisasi useRouter
 
   useEffect(() => {
-    // Pastikan kode hanya dijalankan di sisi klien
+    const L = require("leaflet"); // Impor leaflet di sini
     if (typeof window !== "undefined") {
       // Inisialisasi peta
       const map = L.map("map").setView(
@@ -71,10 +71,19 @@ export default function Maps() {
     }
   }, [router]); // Tambahkan router sebagai dependensi
 
+  return <div id="map" style={{ height: "350px", width: "100%" }}></div>;
+};
+
+// Ekspor komponen MapComponent sebagai komponen dinamis
+const DynamicMapComponent = dynamic(() => Promise.resolve(MapComponent), {
+  ssr: false, // Nonaktifkan SSR untuk komponen ini
+});
+
+export default function Maps() {
   return (
     <section className="mainhero-section">
       <Navigation />
-      <div id="map" style={{ height: "350px", width: "100%" }}></div>
+      <DynamicMapComponent /> {/* Render MapComponent dinamis */}
       <Footer />
     </section>
   );
