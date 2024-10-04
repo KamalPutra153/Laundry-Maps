@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="container text-center text-md-left">
           <div className="row text-center text-md-left">
             <div className="col-md-4 col-lg-4 col-xl-4 mx-auto">
-              <p>Mau jadi tempat berlabuh? gabung aja di Ciptim's!</p>
+              <p>Mau jadi tempat berlabuh? gabung aja di Ciptim&rsquo;s!</p>
               <Image
                 src="/assets/images/LogoCiptim.jpeg"
                 width={100} // Sesuaikan lebar gambar
@@ -40,9 +40,9 @@ export const Footer = () => {
 
           <div className="">
             <p className="text-center">
-              &copy; 2024 Official CIPTIM'S LAUNDRY. Design by{" "}
+              &copy; 2024 Official CIPTIM&rsquo;S LAUNDRY. Design by{" "}
               <a href="./#" className="text-white" rel="nofollow">
-                CIPTIM'S TEAM
+                CIPTIM&rsquo;S TEAM
               </a>
             </p>
           </div>
