@@ -25,48 +25,51 @@ export default function Maps() {
   const router = useRouter(); // Inisialisasi useRouter
 
   useEffect(() => {
-    // Inisialisasi peta
-    const map = L.map("map").setView(
-      [-6.316544562496209, 106.7551530227471],
-      12
-    ); // Koordinat default
+    // Pastikan kode hanya dijalankan di sisi klien
+    if (typeof window !== "undefined") {
+      // Inisialisasi peta
+      const map = L.map("map").setView(
+        [-6.316544562496209, 106.7551530227471],
+        12
+      ); // Koordinat default
 
-    // Menambahkan layer peta dari OpenStreetMap
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
-      attribution: "© OpenStreetMap",
-    }).addTo(map);
-
-    // Menambahkan marker dari data.json
-    const customMarker = CustomMarker(); // Mendapatkan ikon kustom
-    data.forEach((location) => {
-      const marker = L.marker(location.coordinates, {
-        icon: customMarker,
+      // Menambahkan layer peta dari OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap",
       }).addTo(map);
 
-      // Popup dengan deskripsi
-      const popupContent = `<b>${location.name}</b><br>${location.description}`;
-      marker.bindPopup(popupContent);
+      // Menambahkan marker dari data.json
+      const customMarker = CustomMarker(); // Mendapatkan ikon kustom
+      data.forEach((location) => {
+        const marker = L.marker(location.coordinates, {
+          icon: customMarker,
+        }).addTo(map);
 
-      // Menampilkan popup saat hover
-      marker.on("mouseover", () => {
-        marker.openPopup();
-      });
-      marker.on("mouseout", () => {
-        marker.closePopup();
+        // Popup dengan deskripsi
+        const popupContent = `<b>${location.name}</b><br>${location.description}`;
+        marker.bindPopup(popupContent);
+
+        // Menampilkan popup saat hover
+        marker.on("mouseover", () => {
+          marker.openPopup();
+        });
+        marker.on("mouseout", () => {
+          marker.closePopup();
+        });
+
+        // Navigasi ke halaman detail saat marker diklik
+        marker.on("click", () => {
+          router.push(`/detail/${location.id}`); // Mengarahkan ke halaman detail dengan ID lokasi
+        });
       });
 
-      // Navigasi ke halaman detail saat marker diklik
-      marker.on("click", () => {
-        router.push(`/detail/${location.id}`); // Mengarahkan ke halaman detail dengan ID lokasi
-      });
-    });
-
-    // Cleanup pada unmount
-    return () => {
-      map.remove();
-    };
-  }, []);
+      // Cleanup pada unmount
+      return () => {
+        map.remove();
+      };
+    }
+  }, [router]); // Tambahkan router sebagai dependensi
 
   return (
     <section className="mainhero-section">
