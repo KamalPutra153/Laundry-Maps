@@ -28,6 +28,13 @@ const Navigation = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          {/* <Image
+            src="/assets/images/LogoCiptim.jpeg"
+            width={100} // Sesuaikan lebar gambar
+            height={50} // Sesuaikan tinggi gambar
+            className="img-fluid "
+            alt="LOGO CIPTIM"
+          /> */}
           <div
             className="navigation collapse navbar-collapse justify-content-center"
             id="navbarNavAltMarkup"

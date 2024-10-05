@@ -14,25 +14,29 @@ const DetailPage = () => {
   return (
     <section>
       <Navigation />
-      <div className="mainhero-section">
+      <div className="detail-section">
         {laundryDetail ? (
           <>
-            <h1>{laundryDetail.name}</h1>
-            <p>{laundryDetail.description}</p>
-            <p>jam operasional</p>
-            <p>contact</p>
-            <p href="">alamat</p>
-            <a href="" className="btn btn-custom">
-              Order Disini
-            </a>
-            <br />
-            <Image
-              src="/assets/images/LogoCiptim.jpeg"
-              width={100} // Sesuaikan lebar gambar
-              height={50} // Sesuaikan tinggi gambar
-              className="img-fluid"
-              alt="LOGO CIPTIM"
-            />
+            <div class="wrapper">
+              <div class="text-center m-3">
+                <Image
+                  src="/assets/images/LogoCiptim.jpeg"
+                  width={500} // Sesuaikan lebar gambar
+                  height={50} // Sesuaikan tinggi gambar
+                  className="img-fluid"
+                  alt="LOGO CIPTIM"
+                />
+              </div>
+              <h1>{laundryDetail.name}</h1>
+              <p>{laundryDetail.description}</p>
+              <p>jam operasional</p>
+              <p>contact</p>
+              <p href="">alamat</p>
+              <a href="" className="btn btn-custom">
+                Order Disini
+              </a>
+              <br />
+            </div>
           </>
         ) : (
           <p>Loading...</p> // Pesan loading ketika data masih belum tersedia

@@ -74,10 +74,10 @@ a:focus,
 /* NAVIGATION START */
 /* NAVIGATION START */
 #menu {
-  padding: 15px;
   transition: all 0.8s;
   font-family: "Raleway", sans-serif;
   background-color: var(--warna-primary);
+  max-width: 100%;
 }
 
 .navbar-nav {
@@ -307,3 +307,81 @@ label {
 }
 /* CONTACT END */
 /* CONTACT END */
+
+/* ADVANTAGE START */
+/* ADVANTAGE START */
+
+.advantage-section {
+  padding: 100px 0 100px 0;
+}
+
+.advantage-section .wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Sesuaikan jika ingin menyesuaikan posisi vertikal */
+  flex-wrap: wrap; /* Memungkinkan item melipat ke baris berikutnya */
+}
+
+.advantage-section .wrapper .content {
+  padding: 0 !important;
+}
+
+.advantage-section .wrapper img {
+  max-width: 75% !important;
+  border-radius: 50%;
+  transition: ease-in-out 1.5s;
+}
+
+/* .advantage-section .wrapper img:hover {
+  border-radius: 0%;
+  max-width: 60% !important;
+} */
+/* ADVANTAGE END */
+/* ADVANTAGE END */
+
+/* SERVICE START */
+/* SERVICE START */
+
+.service-section {
+  padding: 100px 10px 100px 10px;
+}
+
+.service-section .wrapper {
+  text-align: center;
+}
+
+.service-section .wrapper h1 {
+  text-align: start;
+  padding: 0 !important;
+}
+/* SERVICE END */
+/* SERVICE END */
+
+/* DETAIL START */
+/* DETAIL START */
+.detail-section {
+  padding: 10rem 2rem 10rem 2rem;
+  background-color: #e5e5e5;
+  align-content: center;
+}
+.detail-section .wrapper {
+  padding: 0 5rem 0 5rem;
+}
+
+.detail-section .wrapper img {
+  text-align: center;
+}
+.detail-section .wrapper h1 {
+  text-align: center;
+}
+.detail-section .wrapper h1 {
+  text-align: center;
+}
+@media (max-width: 426px) {
+  .detail-section .wrapper {
+    padding: 0 1rem 0 1rem;
+  }
+}
+/* DETAIL END */
+/* DETAIL END */
