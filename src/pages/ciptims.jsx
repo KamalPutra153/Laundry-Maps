@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 import Navigation from "@/components/navigation";
-
-import DataLaundry from "@/pages/data/listlaundry.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Ciptims() {
+  const [laundryData, setLaundryData] = useState([]);
+
+  useEffect(() => {
+    // Pastikan data di-fetch di client-side untuk mencegah perbedaan dengan SSR
+    import("@/pages/data/listlaundry.json").then((module) => {
+      setLaundryData(module.default);
+    });
+  }, []);
+
+  if (laundryData.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <Navigation />
@@ -17,29 +30,29 @@ export default function Ciptims() {
           </div>
         </div>
         <div className="container">
-          <div className="featured-section-bottom  ">
-            {DataLaundry.map((laundry) => {
+          <div className="featured-section-bottom">
+            {laundryData.map((laundry) => {
               return (
-                <a href={laundry.link} className="featured-item shadow">
+                <a
+                  href={laundry.link}
+                  className="featured-item shadow"
+                  key={laundry.id}
+                >
                   <div className="featured-item-image">
-                    <img
+                    <Image
                       src={laundry.gambartoko}
                       alt="Featured"
-                      className="featured-img"
+                      width="200"
+                      height="50"
+                      className="img-fluid featured-img"
                     />
                   </div>
                   <div className="content-wrapper">
-                    <div key={laundry.id}></div>
                     <h3 className="text-dark">{laundry.name}</h3>
-                    <p className="">{laundry.layanan}</p>
-                    <p className="">{laundry.jamoperasional}</p>
+                    <p>{laundry.layanan}</p>
+                    <p>{laundry.jamoperasional}</p>
                     <Link href={`/detail/${laundry.id}`} legacyBehavior>
-                      <a
-                        // Menggunakan laundry.id yang benar
-                        className="btn btn-custom"
-                      >
-                        Detail
-                      </a>
+                      <a className="btn btn-custom">Detail</a>
                     </Link>
                   </div>
                 </a>
