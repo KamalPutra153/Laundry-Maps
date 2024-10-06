@@ -3,7 +3,13 @@
     "id": "laundry1",
     "name": "Laundryklin Ciputat",
     "coordinates": [-6.316544562496209, 106.7551530227471],
-    "description": "Laundryklin Ciputat"
+    "description": "Laundryklin Ciputat",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan Cuci sepatu.",
+    "rating": "4.9⭐",
+    "contact": "-",
+    "jamoperasional": "10:00 - 12:00",
+    "alamat": "Jl. Legoso Raya, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
+    "gambartoko": "/assets/images/laundry/klinlaundry/Laundryklin.jpeg"
   },
   {
     "id": "laundry2",

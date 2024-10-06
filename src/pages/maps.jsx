@@ -26,6 +26,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     const L = require("leaflet"); // Impor leaflet di sini
+
     if (typeof window !== "undefined") {
       // Inisialisasi peta
       const map = L.map("map").setView(
@@ -41,6 +42,7 @@ const MapComponent = () => {
 
       // Menambahkan marker dari data.json
       const customMarker = CustomMarker(); // Mendapatkan ikon kustom
+
       data.forEach((location) => {
         const marker = L.marker(location.coordinates, {
           icon: customMarker,
@@ -81,8 +83,12 @@ const DynamicMapComponent = dynamic(() => Promise.resolve(MapComponent), {
 
 export default function Maps() {
   return (
-    <section className="mainhero-section">
+    <section className="contact-section">
       <Navigation />
+      <h3 className="text-center">
+        Pada hal ini berisi kumpulan maps laundry yang ada disekitar Ciputat
+        Timur, Tanggerang Selatan, Provinsi Banten, Indonesia.
+      </h3>
       <DynamicMapComponent /> {/* Render MapComponent dinamis */}
       <Footer />
     </section>

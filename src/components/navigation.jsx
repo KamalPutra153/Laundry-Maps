@@ -53,7 +53,7 @@ const Navigation = () => {
                 <Link href="/maps" legacyBehavior>
                   <a className="nav-item nav-link">MAPS</a>
                 </Link>
-                <Link href="" legacyBehavior>
+                <Link href="/ciptims" legacyBehavior>
                   <a className="nav-item nav-link">CIPTIM’S</a>
                 </Link>
                 <Link href="/contact" legacyBehavior>
