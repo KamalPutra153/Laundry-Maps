@@ -21,11 +21,24 @@ export default function Ciptims() {
   return (
     <>
       <Navigation />
+      {/* PAGE HEADER START */}
+      <div className="page-header">
+        <h1>MITRA CIPTIMS</h1>
+        <ul>
+          <li className="titik">
+            <Link href="/" legacyBehavior>
+              <a>Beranda</a>
+            </Link>
+          </li>
+          <li>CIPTIMS</li>
+        </ul>
+      </div>
+      {/* PAGE HEADER END */}
       <section id="All-Event-properties" className="AllEventPoster">
         <div className="container">
           <div className="featured-section-top">
             <div className="text-center">
-              <h1 className="section-heading text-dark ">Our IYSA Events</h1>
+              <h1 className="section-heading text-dark ">List Mitra CIPTIMS</h1>
             </div>
           </div>
         </div>

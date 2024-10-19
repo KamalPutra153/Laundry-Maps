@@ -6,33 +6,182 @@
     "description": "Laundryklin Ciputat",
     "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan Cuci sepatu.",
     "rating": "4.9⭐",
-    "contact": "-",
-    "jamoperasional": "10:00 - 12:00",
+    "contact": "",
+    "instagram": "",
+    "jamoperasional": "Senin – Minggu (07.00 – 20.00)",
+    "linkalamat": "https://maps.app.goo.gl/yA3WY8PpLYt4Pf55A",
     "alamat": "Jl. Legoso Raya, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
-    "gambartoko": "/assets/images/laundry/klinlaundry/Laundryklin.jpeg"
+    "gambartoko": "/assets/images/laundry/Laundry Klin Ciputat/Laundryklin.jpeg",
+    "dokumentasi": [
+      "/assets/images/laundry/Laundry Klin Ciputat/IMG_1619.PNG",
+      "/assets/images/laundry/Laundry Klin Ciputat/IMG_1620.PNG",
+      "/assets/images/laundry/Laundry Klin Ciputat/IMG_1621.PNG"
+    ]
   },
   {
     "id": "laundry2",
     "name": "KILAU Laundry & Dry Clean Services",
     "coordinates": [-6.321433152978019, 106.76292803850285],
-    "description": "KILAU Laundry & Dry Clean Services"
+    "description": "KILAU Laundry & Dry Clean Services",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular.",
+    "rating": "4.9⭐",
+    "contact": "",
+    "instagram": "",
+    "jamoperasional": "Senin - Jumuat (08:00 - 18:00) Sabtu (08:00 - 17:00) Minggu (tutup)",
+    "linkalamat": "https://maps.app.goo.gl/88dEtB7orJ8fMPNV6",
+    "alamat": "No Ciputat Timur, Jl. Purnawarman No.7A, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
+    "gambartoko": "/assets/images/laundry/KILAU Laundy/IMG_1623.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/KILAU Laundy/IMG_1623.PNG",
+      "/assets/images/laundry/KILAU Laundy/IMG_1622.PNG"
+    ]
   },
   {
     "id": "laundry3",
     "name": "Join Laundry Express Legoso",
     "coordinates": [-6.31354401574411, 106.75430958881469],
-    "description": "Join Laundry Express Legoso"
+    "description": "Join Laundry Express Legoso",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan Cuci sepatu.",
+    "rating": "4.9⭐",
+    "contact": "+6281112015099",
+    "instagram": "",
+    "jamoperasional": "Sen - Min (07:00 - 22:00)",
+    "linkalamat": "https://maps.app.goo.gl/4SeAF1RtwQaWTYnPA",
+    "alamat": "Jl. Legoso Raya, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
+    "gambartoko": "/assets/images/laundry/Join Laundry Exspress Legoso/IMG_1624.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/Join Laundry Exspress Legoso/IMG_1625.PNG",
+      "/assets/images/laundry/Join Laundry Exspress Legoso/IMG_1626.PNG"
+    ]
   },
   {
     "id": "laundry4",
     "name": "Okaasan Laundry Ciputat",
     "coordinates": [-6.303655850347631, 106.75384344812234],
-    "description": "Okaasan Laundry Ciputat"
+    "description": "Okaasan Laundry Ciputat",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan Cuci perabotan.",
+    "rating": "5.0⭐",
+    "contact": "+6287872535273",
+    "instagram": "okaasanciputat",
+    "jamoperasional": "Senin - Minggu (08:00 - 20:00)",
+    "linkalamat": "https://maps.app.goo.gl/RAE8XDKDxnVC6vTV6",
+    "alamat": "Jl. W R Supratman Jl. Kp. Utan No.34, RT.001/RW.005, Cemp. Putih, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412",
+    "gambartoko": "/assets/images/laundry/Okasaaan Laundry Ciputat/IMG_1629.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/Okasaaan Laundry Ciputat/IMG_1627.PNG",
+      "/assets/images/laundry/Okasaaan Laundry Ciputat/IMG_1628.PNG"
+    ]
   },
   {
     "id": "laundry5",
     "name": "Wizwash Laundry Ciputat",
     "coordinates": [-6.2917338, 106.7444706],
-    "description": "Ini adalah Ciputat."
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan Cuci sepatu.",
+    "rating": "4.8⭐",
+    "contact": "+6281388000870",
+    "instagram": "",
+    "jamoperasional": "Senin - Minggu (07:00 - 20:00)",
+    "linkalamat": "https://maps.app.goo.gl/ivh6jvugademrNdY7",
+    "alamat": "Jl. Raya Kompas No.34, Pd. Ranji, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412",
+    "gambartoko": "/assets/images/laundry/Wizwash Laundry Ciputat/IMG_1632.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/Wizwash Laundry Ciputat/IMG_1632.PNG",
+      "/assets/images/laundry/Wizwash Laundry Ciputat/IMG_1630.PNG"
+    ]
+  },
+  {
+    "id": "laundry6",
+    "name": "Matahari Laundry Legoso",
+    "coordinates": [-6.322245430999554, 106.75667145942943],
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular, Cuci perabotan dan Cuci Sofa.",
+    "rating": "4.8⭐",
+    "contact": "+6287872535273",
+    "instagram": "mataharilaundry",
+    "jamoperasional": "Senin – Minggu (08:00 - 18:00) kecuali Jumat (tutup)",
+    "linkalamat": "https://maps.app.goo.gl/yUQe9L8DPSRnfMuZ7",
+    "alamat": "Jl. Legoso Raya, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
+    "gambartoko": "/assets/images/laundry/Matahari Laundry Legoso/mataharitoko.png",
+    "dokumentasi": [
+      "/assets/images/laundry/Matahari Laundry Legoso/IMG_1635.PNG",
+      "/assets/images/laundry/Matahari Laundry Legoso/IMG_1634.PNG",
+      "/assets/images/laundry/Matahari Laundry Legoso/IMG_1633.PNG"
+    ]
+  },
+  {
+    "id": "laundry7",
+    "name": "My Laundry Center",
+    "coordinates": [-6.2806105593696735, 106.74670793960091],
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular, Cuci perabotan dan Cuci sepatu.",
+    "rating": "4.9⭐",
+    "contact": "+6282240445038",
+    "instagram": "mylaundry.tangerang",
+    "jamoperasional": "Senin – Minggu (07:00 - 21:00)",
+    "linkalamat": "https://maps.app.goo.gl/HAmSjMqP5tsEQNwa8",
+    "alamat": "PP9W+QM4, Rengas, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412",
+    "gambartoko": "/assets/images/laundry/My Laundry Center/IMG_1638.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/My Laundry Center/IMG_1638.PNG",
+      "/assets/images/laundry/My Laundry Center/IMG_1637.PNG",
+      "/assets/images/laundry/My Laundry Center/IMG_1636.PNG"
+    ]
+  },
+  {
+    "id": "laundry8",
+    "name": "LAUNDRYPEDIA",
+    "coordinates": [-6.320218983215409, 106.75510831909104],
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress, Cuci regular dan menerima pembersihan kain perawatan khusus.",
+    "rating": "5.0⭐",
+    "contact": "+6285150973341",
+    "instagram": "",
+    "jamoperasional": "Senin – Minggu (07:00 - 21:00)",
+    "linkalamat": "https://maps.app.goo.gl/ZGRQLZ4sQskr6wph8",
+    "alamat": "Jl. Legoso Raya No.80, Pisangan, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419",
+    "gambartoko": "/assets/images/laundry/Lundry Pedia/IMG_1396.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/Lundry Pedia/IMG_1395.PNG",
+      "/assets/images/laundry/Lundry Pedia/IMG_1394.PNG"
+    ]
+  },
+  {
+    "id": "laundry9",
+    "name": "Join Laundry Express ",
+    "coordinates": [-6.285058776740016, 106.74614867470964],
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kering, Cuci Setrika Wangi, Cuci Lipat Rapi, Dry Clean Batik, Jasa setrika, Cuci kiloan, Cuci satuan, Cuci exspress dan Cuci regular.",
+    "rating": "4.7⭐",
+    "contact": "+6281190009577 ",
+    "instagram": "joinlaundry.express",
+    "jamoperasional": "Senin – Minggu (07:00 - 22:00)",
+    "linkalamat": "https://maps.app.goo.gl/Hg8XqxkHd1XzD96h8",
+    "alamat": "Jl. W R Supratman Blok RK 3, Pd. Ranji, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412",
+    "gambartoko": "/assets/images/laundry/Join Laundry Exspress/joinlaundry.png",
+    "dokumentasi": [
+      "/assets/images/laundry/Join Laundry Exspress/joinlaundry.png",
+      "/assets/images/laundry/Join Laundry Exspress/IMG_1397.PNG",
+      "/assets/images/laundry/Join Laundry Exspress/IMG_1398.PNG"
+    ]
+  },
+  {
+    "id": "laundry10",
+    "name": "Green Laundry Ciputat",
+    "coordinates": [-6.318152260587432, 106.74636260315783],
+    "description": "Ini adalah Ciputat.",
+    "layanan": "Cuci kiloan, Cuci satuan, Cuci exspress dan Cuci regular.",
+    "rating": "4.9⭐",
+    "contact": "+628811493420",
+    "instagram": "",
+    "jamoperasional": "Senin – jumat , Minggu  (09:00 - 20:00) Sabtu (09:00 – 18:00)",
+    "linkalamat": "https://maps.app.goo.gl/6iHzWsKLKxzj22bi9",
+    "alamat": "Apartemen Green Lake view Tower E no 17, Jl. Dewi Sartika, Ciputat, Kec. Ciputat, Kota Tangerang Selatan, Banten 15411",
+    "gambartoko": "/assets/images/laundry/Green Laundry Ciputat/IMG_1400.PNG",
+    "dokumentasi": [
+      "/assets/images/laundry/Green Laundry Ciputat/IMG_1400.PNG",
+      "/assets/images/laundry/Green Laundry Ciputat/IMG_1399.PNG",
+      "/assets/images/laundry/Green Laundry Ciputat/IMG_1401.PNG"
+    ]
   }
 ]

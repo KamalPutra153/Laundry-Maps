@@ -57,7 +57,7 @@ const Navigation = () => {
                   <a className="nav-item nav-link">CIPTIM’S</a>
                 </Link>
                 <Link href="/contact" legacyBehavior>
-                  <a className="nav-item nav-link">CONTACT</a>
+                  <a className="nav-item nav-link">KONTAK</a>
                 </Link>
                 {/* <Link href="/" legacyBehavior>
                   <a className="btn btn-custom nav-item nav-link">PESAN</a>

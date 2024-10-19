@@ -4,8 +4,8 @@ export const Service = () => {
   return (
     <>
       <section className="service-section">
+        <h1 className="m-5">Layanan Kami :</h1>
         <div className="wrapper row">
-          <h1 className="m-3">Layanan Kami</h1>
           <div className="content col-lg-3">
             <Images
               src="/assets/images/icon/OpeningCabang.jpeg"

@@ -25,6 +25,10 @@ p {
   font-family: var(--font-family2);
 }
 
+p {
+  font-size: clamp(12px, 0.5rem + 1vw, 16px);
+}
+
 .invisible {
   display: none;
 }
@@ -38,7 +42,7 @@ p {
   font-size: 15px;
   font-weight: 500;
   border-radius: 25px;
-  /* transition: all 0.5s linear; */
+  transition: all 0.3s linear;
   border: 0;
 }
 .btn-custom:hover,
@@ -67,6 +71,71 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
+
+/* PAGE HEADER START */
+/* PAGE HEADER START */
+.page-header {
+  padding: 150px 25px 75px 25px;
+  background: var(--warna-primary);
+  text-align: center;
+  align-content: center;
+  border-radius: 25%;
+}
+.page-header h1 {
+  color: var(--warna-tulisan);
+  font-family: var(--font-family3);
+}
+.page-header a {
+  color: var(--warna-tulisan);
+  text-decoration: none;
+  font-family: var(--font-family3);
+}
+
+.page-header .divider {
+  width: 100% !important;
+  position: absolute;
+  pointer-events: none;
+  background: var(--warna-tulisan);
+  mask-size: 100%;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.page-header ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.page-header ul li {
+  color: var(--warna-tulisan);
+  font-family: var(--font-family3);
+  display: inline-block;
+  position: relative;
+  opacity: 0.9;
+  margin-left: 15px;
+}
+
+.page-header ul .titik::before {
+  border-radius: 50%;
+  background-color: var(--warna-tulisan);
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  content: "";
+  right: -12px;
+  transform: translate(-50%);
+  top: 45%;
+}
+
+@media (max-width: 426px) {
+  .page-header {
+    padding: 100px 25px 75px 25px;
+  }
+}
+/* PAGE HEADER END */
+/* PAGE HEADER END */
 
 /* UMUM END*/
 /* UMUM END*/
@@ -122,7 +191,6 @@ a:focus,
 /* MAINHERO START */
 .mainhero-section {
   padding: 100px 0px 100px 0px;
-  height: 100vh;
   background-color: #e5e5e5;
   align-content: center;
   background-image: url(/assets/images/Laundry.png);
@@ -145,7 +213,6 @@ a:focus,
 
 .mainhero-section .text p {
   background-color: var(--warna-sekunder);
-  /* background-color: #5ca9fb; */
   padding: 1rem;
   border-radius: 10px;
 }
@@ -189,25 +256,41 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+
+@media (max-width: 426px) {
+  .mainhero-section .text {
+    padding: 2rem;
+  }
+
+  .mainhero-section .text p {
+    text-align: justify;
+  }
+}
 /* MAINHERO END */
 /* MAINHERO END */
 
 /* CONTACT START */
 /* CONTACT START */
 .contact-section {
-  padding: 175px 0 100px 0;
-  background: linear-gradient(to right, #ffc602 0%, #49e2b6 100%);
-  color: rgba(255, 255, 255, 0.75);
+  padding: 100px 100px 100px 100px;
+  max-width: 100%;
+}
+
+.contact-section .wrapper {
+  width: 100%;
+  border: 2px solid var(--warna-primary);
+  align-items: center;
+  margin: 0;
 }
 .contact-section .section-title {
   margin-bottom: 40px;
 }
 .contact-section .section-title p {
-  color: var(--warna-tulisan2);
-  font-size: 16px;
+  color: var(--warna-tulisan);
+  text-align: justify;
 }
 .contact-section h2 {
-  color: #fff;
+  color: var(--warna-tulisan);
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -222,106 +305,32 @@ header .intro-text {
   left: 30px;
 }
 .contact-section h3 {
-  color: #fff;
+  color: var(--warna-tulisan);
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
 }
-.contact-section form {
-  padding-top: 20px;
-}
-.contact-section .text-danger {
-  color: #cc0033;
-  text-align: left;
-}
-.contact-section .btn-custom {
-  margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
-}
-.contact-section .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
-}
-label {
-  color: var(--warna-tulisan);
-  font-size: 12px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  float: left;
-}
-.contact-section .form-control {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #444;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-.contact-section .form-control:focus {
-  border-color: #999;
-  outline: 0;
-  -webkit-box-shadow: transparent;
-  box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-  color: #777;
-}
-.form-control:-moz-placeholder {
-  color: #777;
-}
-.form-control::-moz-placeholder {
-  color: #777;
-}
-.form-control:-ms-input-placeholder {
-  color: #777;
-}
+
 .contact-section .contact-item {
   margin: 20px 0;
 }
 .contact-section .contact-item span {
-  color: rgba(255, 255, 255, 1) !important;
+  color: var(--warna-tulisan) !important;
   margin-bottom: 10px;
   display: block;
 }
 .contact-section .contact-item a {
-  color: var(--warna-tulisan2) !important;
+  color: var(--warna-tulisan) !important;
 }
 .contact-section .contact-item i.fa {
   margin-right: 10px;
 }
-.contact-section .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
-  margin-top: 50px;
-  text-align: center;
-}
-.contact-section .social ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-.contact-section .social i.fa {
-  font-size: 22px;
-  width: 48px;
-  height: 48px;
-  padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
-.contact-section .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+
+@media (max-width: 426px) {
+  .contact-section {
+    padding: 100px 10px 100px 10px;
+    max-width: 100%;
+  }
 }
 /* CONTACT END */
 /* CONTACT END */
@@ -334,11 +343,19 @@ label {
 }
 
 .advantage-section .wrapper {
+  max-width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Sesuaikan jika ingin menyesuaikan posisi vertikal */
   flex-wrap: wrap; /* Memungkinkan item melipat ke baris berikutnya */
+}
+
+.advantage-section h1 {
+  text-align: start;
+  padding: 0 !important;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: underline;
 }
 
 .advantage-section .wrapper .content {
@@ -362,16 +379,18 @@ label {
 /* SERVICE START */
 
 .service-section {
-  padding: 100px 10px 100px 10px;
+  padding: 0px 10px 100px 10px;
 }
 
 .service-section .wrapper {
   text-align: center;
 }
 
-.service-section .wrapper h1 {
+.service-section h1 {
   text-align: start;
   padding: 0 !important;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: underline;
 }
 /* SERVICE END */
 /* SERVICE END */
@@ -397,8 +416,12 @@ label {
   text-align: center;
 }
 @media (max-width: 426px) {
+  .detail-section {
+    padding: 10rem 1rem 10rem 1rem;
+  }
+
   .detail-section .wrapper {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem !important;
   }
 }
 /* DETAIL END */
@@ -526,3 +549,25 @@ label {
 }
 /* CIPTIMS END */
 /* CIPTIMS END */
+
+/* MAPS START */
+/* MAPS START */
+.maps-section {
+  padding: 100px 0 75px 0;
+}
+
+#map {
+  text-align: center;
+  padding: 2rem !important;
+  border: 0.5rem solid var(--warna-primary);
+  border-radius: 10px;
+}
+
+@media (max-width: 456px) {
+  .maps-section .desc p {
+    text-align: justify;
+    padding: 1rem;
+  }
+}
+/* MAPS END */
+/* MAPS END */

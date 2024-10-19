@@ -2,6 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const Footer = () => {
+  const message =
+    "Halo Admin, saya tertarik dan ingin tahu lebih detail, bisa bantu dijelaskan?";
+  const encodedMessage = encodeURIComponent(message);
+
   return (
     <>
       <footer className="bg-dark text-white pt-4 pb-4" id="footer">
@@ -18,10 +22,10 @@ export const Footer = () => {
               />
               <div>
                 <a
-                  href="https://www.facebook.com/p/Indonesia-Young-scientist-Association-100063979907207/"
+                  href={`https://api.whatsapp.com/send/?phone=6281398439851&text=${encodedMessage}&type=phone_number&app_absent=0`}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-outline-light btn-floating m-1"
-                  style={{ width: "50px" }}
                 >
                   <i className="fab fa-whatsapp fa-2x"></i>
                 </a>

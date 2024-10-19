@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Maps() {
   const message =
@@ -9,8 +10,21 @@ export default function Maps() {
   return (
     <>
       <Navigation />
+      {/* PAGE HEADER START */}
+      <div className="page-header">
+        <h1>KONTAK</h1>
+        <ul>
+          <li className="titik">
+            <Link href="/" legacyBehavior>
+              <a>Beranda</a>
+            </Link>
+          </li>
+          <li>Kontak</li>
+        </ul>
+      </div>
+      {/* PAGE HEADER END */}
       <section className="contact-section" id="contact">
-        <div className="container row">
+        <div className="wrapper row">
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
@@ -34,7 +48,7 @@ export default function Maps() {
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
+          <div className="col-md-3 contact-info">
             <div className="contact-item mt-0">
               <h3>Contact Info</h3>
               <p>
@@ -72,11 +86,11 @@ export default function Maps() {
                   <i className="fa fa-envelope-o"></i> Email
                 </span>
                 <a
-                  href="mailto:gyiif.iysa@gmail.com"
+                  href="mailto:ciptims@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  gyiif.iysa@gmail.com
+                  ciptims@gmail.com
                 </a>
               </p>
             </div>

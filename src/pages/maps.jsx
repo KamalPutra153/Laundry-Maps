@@ -1,4 +1,5 @@
 // components/maps.js
+import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic"; // Import dynamic dari Next.js
@@ -31,7 +32,7 @@ const MapComponent = () => {
       // Inisialisasi peta
       const map = L.map("map").setView(
         [-6.316544562496209, 106.7551530227471],
-        12
+        13
       ); // Koordinat default
 
       // Menambahkan layer peta dari OpenStreetMap
@@ -49,7 +50,8 @@ const MapComponent = () => {
         }).addTo(map);
 
         // Popup dengan deskripsi
-        const popupContent = `<b>${location.name}</b><br>${location.description}`;
+        // const popupContent = `<b>${location.name}</b><br>${location.description}`;
+        const popupContent = `<b>${location.name}`;
         marker.bindPopup(popupContent);
 
         // Menampilkan popup saat hover
@@ -73,7 +75,7 @@ const MapComponent = () => {
     }
   }, [router]); // Tambahkan router sebagai dependensi
 
-  return <div id="map" style={{ height: "350px", width: "100%" }}></div>;
+  return <div id="map" style={{ height: "500px", width: "100%" }}></div>;
 };
 
 // Ekspor komponen MapComponent sebagai komponen dinamis
@@ -83,14 +85,38 @@ const DynamicMapComponent = dynamic(() => Promise.resolve(MapComponent), {
 
 export default function Maps() {
   return (
-    <section className="contact-section">
+    <>
       <Navigation />
-      <h3 className="text-center">
-        Pada hal ini berisi kumpulan maps laundry yang ada disekitar Ciputat
-        Timur, Tanggerang Selatan, Provinsi Banten, Indonesia.
-      </h3>
-      <DynamicMapComponent /> {/* Render MapComponent dinamis */}
+      {/* PAGE HEADER START */}
+      <div className="page-header">
+        <h1>CIPTIMS MAPS</h1>
+        <ul>
+          <li className="titik">
+            <Link href="/" legacyBehavior>
+              <a>Beranda</a>
+            </Link>
+          </li>
+          <li>Maps</li>
+        </ul>
+      </div>
+      {/* PAGE HEADER END */}
+      <section className="maps-section text-center">
+        <h2>MAPS LAUNDRY CIPUTAT TIMUR CIPTIMS :</h2>
+        <div className="desc">
+          <p>
+            Di sini, kalian bisa melihat seluruh laundry yang telah bermitra
+            dengan CIPTIMS. Semua laundry mitra CIPTIMS dipastikan amanah dan
+            terpercaya. Jadi, tunggu apa lagi? Ayo cuci semua kebutuhan kalian
+            bersama mitra CIPTIMS, terutama untuk kalian yang berada di sekitar
+            Ciputat Timur, Tangerang Selatan, Provinsi Banten, Indonesia.
+          </p>
+        </div>
+        <p className="fw-bold fst-italic">
+          *kalian bisa klik point maps untuk melihat detail nya
+        </p>
+        <DynamicMapComponent /> {/* Render MapComponent dinamis */}
+      </section>
       <Footer />
-    </section>
+    </>
   );
 }
